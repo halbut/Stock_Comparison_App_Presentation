@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Stock Comparison App</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Stock Comparison App">
+  <meta name="author" content="Alper Halbutogullari">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Stock Comparison App</h1>
+    <h2>Presentation</h2>
+    <p>Alper Halbutogullari<br/>Data Scientist</p>
+  </hgroup>
+    <a href="https://github.com/halbut/Stock_Comparison_App_Presentation/zipball/gh-pages" class="example">
+     Download
+    </a>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Interactive Stock App with Shiny Controls</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><BR>  </p>
+
+<h1>Why another App?</h1>
+
+<p><BR>   <BR></p>
+
+<ol class = "build incremental">
+<li><p>Vanilla stock graphs usually present one stock at a time
+<BR>   <BR></p></li>
+<li><p>But for investment you usually need to compare two stocks
+<BR>   <BR></p></li>
+<li><p>This App plots two stocks at the same time over a given period so that you can make a good comparison.
+<BR>   <BR></p></li>
+<li><p>Bonus: You also have the option to view the quotes one stock at a time.</p></li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Original Stock App</h2>
+  </hgroup>
+  <article data-timings="">
+    <div class="row-fluid">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-4">
+        <img src="assets/img/Stock_Comparison_App_screenshot_single_stock_original_small.png" align="right"/>
+      </div>
+      <div class="col-sm-2">
+        <span class="help-block">Select a stock to examine. 
+        Information will be collected from yahoo finance.</span>
+        <br/>
+        <br/>
+        <div class="form-group shiny-input-container">
+          <label for="symb">Symbol</label>
+          <input id="symb" type="text" class="form-control" value="SPY"/>
+        </div>
+        <br/>
+        <br/>
+        <span class="help-block">Date range: </span>
+        <br/>
+        <br/>
+        <div class="form-group shiny-input-container">
+          <label for="start">start</label>
+          <input id="start" type="text" class="form-control" value="2015-05-30"/>
+        </div>
+        <br/>
+        <div class="form-group shiny-input-container">
+          <label for="end">end</label>
+          <input id="end" type="text" class="form-control" value="2015-12-13"/>
+        </div>
+        <br/>
+        <br/>
+        <button id="get" type="button" class="btn btn-default action-button">Get Stock</button>
+        <br/>
+        <br/>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Interactive Stock Comparison App</h2>
+  </hgroup>
+  <article data-timings="">
+    <h1>Single stock view</h1>
+
+<p><BR></p>
+
+<p><img src="assets/img/Stock_Comparison_App_screenshot_single_stock.png" alt="Stock Comparison App screenshot"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Interactive Stock Comparison App</h2>
+  </hgroup>
+  <article data-timings="">
+    <h1>Double stock view</h1>
+
+<p><BR></p>
+
+<p><img src="assets/img/Stock_Comparison_App_screenshot_double_stock.png" alt="Stock Comparison App screenshot"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Interactive Stock App with Shiny Controls'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Original Stock App'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Interactive Stock Comparison App'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Interactive Stock Comparison App'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
