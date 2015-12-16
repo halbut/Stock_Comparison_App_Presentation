@@ -45,7 +45,7 @@ suppressMessages(suppressWarnings(require(shiny)))
 suppressMessages(suppressWarnings(require(slidify)))
 suppressMessages(suppressWarnings(require(quantmod)))
 
-slidifyUI(fluidPage(
+shinyUI(fluidPage(
   
   fluidRow(
     # This is here due to a bug in slidify
