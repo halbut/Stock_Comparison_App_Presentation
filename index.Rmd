@@ -37,9 +37,13 @@ github      :
 ## Original Stock App
 
 
-```{r opts.label = 'shiny', cache=FALSE, results = 'asis', echo=FALSE, eval=TRUE}
-library(shiny)
-library(quantmod)
+```{r opts.label = 'shiny', cache=FALSE, warning=FALSE, echo=FALSE, eval=TRUE, error=FALSE}
+suppressMessages(suppressWarnings(require(zoo)))
+suppressMessages(suppressWarnings(require(xts)))
+suppressMessages(suppressWarnings(require(TTR)))
+suppressMessages(suppressWarnings(require(shiny)))
+suppressMessages(suppressWarnings(require(slidify)))
+suppressMessages(suppressWarnings(require(quantmod)))
 
 slidifyUI(fluidPage(
   
