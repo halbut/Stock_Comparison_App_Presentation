@@ -12,7 +12,8 @@ knit        : slidify::knit2slides
 github      :
    user: halbut
    repo: Stock_Comparison_App_Presentation
---- .class #id
+
+---
 
 ## Interactive Stock App with Shiny Controls
 <BR>  

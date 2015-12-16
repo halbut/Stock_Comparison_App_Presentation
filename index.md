@@ -12,7 +12,8 @@ knit        : slidify::knit2slides
 github      :
    user: halbut
    repo: Stock_Comparison_App_Presentation
---- .class #id
+
+---
 
 ## Interactive Stock App with Shiny Controls
 <BR>  
@@ -36,44 +37,42 @@ github      :
 ## Original Stock App
 
 
-<div class="row-fluid">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-sm-4">
-        <img src="assets/img/Stock_Comparison_App_screenshot_single_stock_original_small.png" align="right"/>
-      </div>
-      <div class="col-sm-2">
-        <span class="help-block">Select a stock to examine. 
-        Information will be collected from yahoo finance.</span>
-        <br/>
-        <br/>
-        <div class="form-group shiny-input-container">
-          <label for="symb">Symbol</label>
-          <input id="symb" type="text" class="form-control" value="SPY"/>
-        </div>
-        <br/>
-        <br/>
-        <span class="help-block">Date range: </span>
-        <br/>
-        <br/>
-        <div class="form-group shiny-input-container">
-          <label for="start">start</label>
-          <input id="start" type="text" class="form-control" value="2015-05-30"/>
-        </div>
-        <br/>
-        <div class="form-group shiny-input-container">
-          <label for="end">end</label>
-          <input id="end" type="text" class="form-control" value="2015-12-13"/>
-        </div>
-        <br/>
-        <br/>
-        <button id="get" type="button" class="btn btn-default action-button">Get Stock</button>
-        <br/>
-        <br/>
-      </div>
-    </div>
-  </div>
-</div>
+
+```
+## Warning: package 'quantmod' was built under R version 3.1.3
+```
+
+```
+## Loading required package: xts
+## Loading required package: zoo
+```
+
+```
+## Warning: package 'zoo' was built under R version 3.1.3
+```
+
+```
+## 
+## Attaching package: 'zoo'
+## 
+## The following objects are masked from 'package:base':
+## 
+##     as.Date, as.Date.numeric
+## 
+## Loading required package: TTR
+```
+
+```
+## Warning: package 'TTR' was built under R version 3.1.3
+```
+
+```
+## Version 0.4-0 included new data defaults. See ?getSymbols.
+```
+
+```
+## Error in eval(expr, envir, enclos): could not find function "slidifyUI"
+```
 
 ---
 
